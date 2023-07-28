@@ -18,16 +18,20 @@ public class MercuryTest {
     //Se crea objeto WebDriver
     private WebDriver driver;
 
-    //Localizador mediante link de tipo texto
+    //-------------------------------- Localizadores Registro --------------------------------
     By linkRegistro = By.linkText("REGISTER");
     By pagRegistro = By.xpath("//img[@src='images/mast_register.gif']");
     By userName = By.id("email");
     By password = By.name("password");
     By confirmarPassword = By.name("confirmPassword");
     By enviarRegistro = By.name("submit");
+
+    //-------------------------------- Localizadores Login --------------------------------
     By usuario = By.name("userName");
     By contraseña = By.name("password");
     By login = By.name("submit");
+
+    //------------------------------------------------------------------------------------------------
 
     @Before
     public void setUp(){
